@@ -11,9 +11,10 @@ function postfixEvaluator(string) {
   const arr = string.split(" ");
   console.log(arr);
 
-  if (arr.length === 1) {
+  if (arr.length === 1 && !Number(arr[0])) {
     total = arr[0];
     console.log(total);
+    console.log("Invalid subscription type");
     return;
   }
 
@@ -62,6 +63,6 @@ function postfixEvaluator(string) {
   return total;
 }
 
-postfixEvaluator("-1");
+postfixEvaluator("k");
 
 // -------------------Не сошлись два ответа. Не понял их результат.------------------------
