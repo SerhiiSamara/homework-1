@@ -18,6 +18,11 @@ function postfixEvaluator(string) {
     return;
   }
 
+  if (arr.length === 1) {
+    total = arr[0];
+    return;
+  }
+
   if (arr.length === 2) {
     console.log("Invalid subscription type");
   }
@@ -63,6 +68,6 @@ function postfixEvaluator(string) {
   return total;
 }
 
-postfixEvaluator("k");
+postfixEvaluator("4 5 + 8 *");
 
 // -------------------Не сошлись два ответа. Не понял их результат.------------------------
