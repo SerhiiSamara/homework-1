@@ -68,6 +68,6 @@ function postfixEvaluator(string) {
   return total;
 }
 
-postfixEvaluator("4 5 + 8 *");
+postfixEvaluator("4 52 + 8 *");
 
 // -------------------Не сошлись два ответа. Не понял их результат.------------------------
